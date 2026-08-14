@@ -1,30 +1,38 @@
+require("dotenv").config(); // Paling atas
+
 const express = require("express");
 const mysql = require("mysql2");
 const crypto = require("crypto");
 const cors = require("cors");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Koneksi Database MySQL
+// Koneksi Database Menggunakan Environment Variables
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "M8he331_30L",
-    database: "makna_pilar_db"
+    host: process.env.DB_HOST || "localhost",
+    user: process.env.DB_USER || "root",
+    password: process.env.DB_PASSWORD || "",
+    database: process.env.DB_NAME || "makna_pilar_db"
 });
 
 db.connect((err) => {
     if (err) {
         console.error("Gagal terhubung ke database:", err.message);
     } else {
-        console.log("Terhubung ke database MySQL (makna_pilar_db)");
+        console.log(`Terhubung ke database MySQL (${process.env.DB_NAME || "makna_pilar_db"})`);
     }
+});
+
+// ... sisa endpoint register, login, profile tetap sama ...
+
+app.listen(PORT, () => {
+    console.log(`Server Auth berjalan di http://localhost:${PORT}`);
 });
 
 // Helper function untuk enkripsi MD5
