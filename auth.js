@@ -29,11 +29,6 @@ db.connect((err) => {
     }
 });
 
-// ... sisa endpoint register, login, profile tetap sama ...
-
-app.listen(PORT, () => {
-    console.log(`Server Auth berjalan di http://localhost:${PORT}`);
-});
 
 // Helper function untuk enkripsi MD5
 function hashMD5(text) {
