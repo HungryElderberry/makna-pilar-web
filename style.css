@@ -1,0 +1,547 @@
+:root {
+    --bg-creme: #f5ebe1;
+    --accent-orange: #f15a3e;
+    --accent-orange-hover: #d94a30;
+    --text-dark: #1f1f1f;
+    --text-muted: #6c757d;
+    --white: #ffffff;
+    --dark-footer: #161616;
+}
+
+body {
+    background-color: var(--bg-creme);
+    color: var(--text-dark);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Headings Typography */
+h1,
+h2,
+h3,
+.font-serif {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-weight: 700;
+}
+
+.sub-title-tag {
+    color: var(--accent-orange);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--bg-creme) !important;
+}
+
+.nav-link {
+    color: #333333;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover {
+    color: var(--accent-orange);
+}
+
+.nav-link.active {
+    color: var(--accent-orange) !important;
+    border-bottom: 2px solid var(--accent-orange);
+}
+
+.logo-circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-circle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cart-icon-btn {
+    color: #222;
+    font-size: 1.25rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: var(--accent-orange);
+    color: #fff;
+    font-size: 0.65rem;
+    border-radius: 50%;
+    padding: 2px 5px;
+}
+
+/* Buttons */
+.btn-orange {
+    background-color: var(--accent-orange);
+    color: var(--white);
+    border: 1px solid var(--accent-orange);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.55rem 1.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-orange:hover {
+    background-color: var(--accent-orange-hover);
+    color: var(--white);
+    border-color: var(--accent-orange-hover);
+}
+
+.btn-outline-orange {
+    background-color: transparent;
+    color: var(--accent-orange);
+    border: 1.5px solid var(--accent-orange);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.55rem 1.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-orange:hover {
+    background-color: var(--accent-orange);
+    color: var(--white);
+}
+
+.btn-trans-white {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.55rem 1.25rem;
+    backdrop-filter: blur(4px);
+}
+
+.btn-trans-white:hover {
+    background-color: var(--white);
+    color: #000;
+}
+
+/* Hero Section */
+.hero-card {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    min-height: 480px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.55) 50%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    max-width: 580px;
+    padding: 3.5rem;
+}
+
+/* Two Floors Section */
+.floor-card {
+    position: relative;
+    min-height: 320px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.floor-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.85) 90%);
+}
+
+.floor-content {
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem;
+    color: #ffffff;
+}
+
+.floor-tag {
+    background-color: var(--accent-orange);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 0.4rem;
+}
+
+/* Food Cards */
+.food-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.food-card-img {
+    height: 240px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Carousel Section */
+.carousel-wrapper {
+    max-width: 750px;
+    width: 100%;
+}
+
+.carousel-img-container {
+    height: 320px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.carousel-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-nav-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.carousel-nav-btn:hover {
+    background-color: var(--accent-orange);
+    color: #fff;
+    border-color: var(--accent-orange);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #a0a0a0;
+    border: none;
+    margin: 0 4px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--accent-orange) !important;
+}
+
+/* Story & Map Section Cards (Stacked Layout) */
+.info-section-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-footer);
+    color: var(--white);
+}
+
+.footer-nav a {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+.footer-nav a:hover,
+.footer-nav a.active {
+    color: var(--accent-orange);
+}
+
+.footer-nav a.active {
+    text-decoration: underline;
+}
+
+/* Find Us White Text Styling */
+.find-us-text {
+    color: #ffffff !important;
+    font-size: 0.95rem;
+}
+
+.find-us-icon {
+    font-size: 1.15rem;
+    color: #ffffff;
+}
+
+
+/* Menu Sub-section Accordion Header */
+.menu-collapse-btn {
+    width: 100%;
+    background-color: var(--accent-orange);
+    color: #ffffff;
+    border: 1px solid var(--accent-orange);
+    border-radius: 12px;
+    padding: 0.85rem 1.25rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(241, 90, 62, 0.15);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-collapse-btn:hover {
+    background-color: var(--accent-orange-hover);
+    color: #ffffff;
+}
+
+/* Arrow indicator rotation */
+.menu-collapse-btn .chevron-icon {
+    font-size: 1.1rem;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+/* Saat terbuka (tidak ada class .collapsed), putar panah ke bawah */
+.menu-collapse-btn:not(.collapsed) .chevron-icon {
+    transform: rotate(180deg);
+}
+
+.menu-collapse-btn:not(.collapsed) {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-color: var(--accent-orange);
+}
+
+
+/* ==================== GALLERY PAGE ==================== */
+.gallery-filter-btn {
+  background-color: transparent;
+  color: var(--text-dark);
+  border: 1.5px solid #d4c3b3;
+  border-radius: 20px;
+  padding: 0.4rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.gallery-filter-btn:hover,
+.gallery-filter-btn.active {
+  background-color: var(--accent-orange);
+  color: var(--white);
+  border-color: var(--accent-orange);
+}
+
+/* CSS Masonry Column Layout */
+.gallery-masonry {
+  column-count: 3;
+  column-gap: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .gallery-masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 575px) {
+  .gallery-masonry {
+    column-count: 1;
+  }
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-item.portrait-img img {
+  height: 380px;
+}
+
+.gallery-item.landscape-img img {
+  height: 230px;
+}
+
+/* Overlay Caption on Hover */
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.75) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem;
+  color: #ffffff;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+
+/* ==================== ABOUT US PAGE CUSTOM STYLES ==================== */
+/* Ukuran Logo besar & clean tanpa border */
+.about-brand-logo {
+  width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Aksen Warna Makna (Ungu - Biru) */
+.badge-makna-accent {
+  background-color: #3b3a6d;
+  color: #ffffff;
+}
+
+.tag-makna {
+  color: #3b3a6d;
+  border: 1px solid #3b3a6d !important;
+  background-color: rgba(59, 58, 109, 0.05);
+}
+
+/* Aksen Warna Pilar (Orange) */
+.badge-pilar-accent {
+  background-color: var(--accent-orange);
+  color: #ffffff;
+}
+
+.tag-pilar {
+  color: var(--accent-orange);
+  border: 1px solid var(--accent-orange) !important;
+  background-color: rgba(241, 90, 62, 0.05);
+}
+
+
+/* ==================== CONTACT US PAGE ==================== */
+.contact-info-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  border: none;
+}
+
+.social-link-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  background-color: var(--bg-creme);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: all 0.25s ease-in-out;
+}
+
+.social-link-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(241, 90, 62, 0.15);
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+}
+
+.social-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  color: var(--accent-orange);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--accent-orange);
+  box-shadow: 0 0 0 0.25rem rgba(241, 90, 62, 0.25);
+}
+
+
+/* ==================== AUTH TABS STYLING ==================== */
+.auth-tab-box {
+  background-color: #ede2d5;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.auth-tab-btn {
+  color: #555555 !important;
+  font-weight: 600;
+  border-radius: 8px !important;
+  border: none !important;
+  padding: 0.6rem 1rem !important;
+  background-color: transparent !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.auth-tab-btn.active {
+  background-color: #ffffff !important;
+  color: var(--text-dark) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
