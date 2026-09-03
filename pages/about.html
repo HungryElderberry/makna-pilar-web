@@ -1,213 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us - Makna x Pilar</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Makna x Pilar</title>
+        <!-- Google Fonts: Playfair Display -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Google Fonts: Playfair Display -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+        <!-- Bootstrap 5 CSS & Bootstrap Icons -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+            rel="stylesheet"
+        />
 
-    <!-- Bootstrap 5 CSS & Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../style.css" />
+    </head>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../style.css" />
-</head>
+    <body>
+        <!-- ==================== NAVBAR ==================== -->
+        <app-navbar></app-navbar>
 
-<body>
-
-    <!-- ==================== NAVBAR ==================== -->
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg py-3">
-            <div class="container d-flex align-items-center justify-content-between">
-
-                <!-- Left: Logos -->
-                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
-                    <img src="../images/Logo-Makna.jpg" alt="Logo Makna" class="logo-circle"
-                        onerror="this.src='../images/portrait.jpg'" />
-                    <img src="../images/Logo-Pilar_Kayu.jpg" alt="Logo Pilar" class="logo-circle"
-                        onerror="this.src='../images/portrait.jpg'" />
-                </a>
-
-                <!-- Center: Navigation Links -->
-                <div class="d-none d-lg-flex align-items-center gap-2">
-                    <a class="nav-link" href="../index.html">Home</a>
-                    <a class="nav-link" href="menu.html">Menu</a>
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                    <a class="nav-link active" href="about.html">About Us</a>
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+        <!-- ==================== MAIN CONTENT ==================== -->
+        <main class="container py-4">
+            <!-- Section Intro / Our Story -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-lg-9 text-center">
+                    <span class="sub-title-tag">Our Story</span>
+                    <h1 class="display-6 fw-bold mt-1 mb-3">
+                        Two Concepts Under One Roof
+                    </h1>
+                    <p class="text-secondary" style="line-height: 1.8">
+                        Berawal dari sebuah gagasan sederhana untuk
+                        menggabungkan kultur kopi modern dengan kehangatan resto
+                        keluarga,
+                        <strong>Makna x Pilar</strong> hadir di kawasan
+                        strategis Bandung. Menempati dua lantai dengan identitas
+                        unik masing-masing, kami menghadirkan pengalaman
+                        menyeluruh: mulai dari tegukan kopi berkualitas hingga
+                        hidangan santap hangat bersama orang-orang terdekat.
+                    </p>
                 </div>
-
-                <!-- Right: Cart & Profile -->
-                <div class="d-flex align-items-center gap-3">
-                    <a href="cart.html" class="cart-icon-btn">
-                        <i class="bi bi-cart3"></i>
-                        <span class="cart-badge">0</span>
-                    </a>
-                    <a href="profile.html">
-                        <img src="../images/profile-placeholder.jpg" alt="Profile" class="avatar-circle border" />
-                    </a>
-                </div>
-
             </div>
-        </nav>
-    </header>
 
-    <!-- ==================== MAIN CONTENT ==================== -->
-    <main class="container py-4">
+            <!-- Section 1: Makna Kopi (Lt. 2) -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 col-lg-9">
+                    <div class="card info-section-card p-4 p-md-5">
+                        <div class="row g-4 align-items-center">
+                            <!-- Logo Makna (Besar & Bebas Border) -->
+                            <div class="col-12 col-md-5 text-center">
+                                <img
+                                    src="../images/brand logo/Logo-Makna.jpg"
+                                    alt="Makna Kopi Logo"
+                                    class="about-brand-logo"
+                                />
+                            </div>
 
-        <!-- Section Intro / Our Story -->
-        <div class="row justify-content-center mb-5">
-            <div class="col-12 col-lg-9 text-center">
-                <span class="sub-title-tag">Our Story</span>
-                <h1 class="display-6 fw-bold mt-1 mb-3">Two Concepts Under One Roof</h1>
-                <p class="text-secondary" style="line-height: 1.8;">
-                    Berawal dari sebuah gagasan sederhana untuk menggabungkan kultur kopi modern dengan kehangatan resto
-                    keluarga,
-                    <strong>Makna x Pilar</strong> hadir di kawasan strategis Bandung. Menempati dua lantai dengan
-                    identitas unik masing-masing,
-                    kami menghadirkan pengalaman menyeluruh: mulai dari tegukan kopi berkualitas hingga hidangan santap
-                    hangat bersama orang-orang terdekat.
-                </p>
-            </div>
-        </div>
+                            <!-- Penjelasan Makna Kopi -->
+                            <div class="col-12 col-md-7">
+                                <span
+                                    class="badge badge-makna-accent px-3 py-2 rounded-pill mb-2 fw-semibold"
+                                    >Lt. 2 Makna Kopi</span
+                                >
+                                <h3 class="h4 fw-bold mb-2">
+                                    The Specialty Coffee Haven
+                                </h3>
+                                <p
+                                    class="text-secondary small mb-3"
+                                    style="line-height: 1.7"
+                                >
+                                    <strong>Makna Kopi</strong> berfokus
+                                    menyajikan racikan biji kopi pilihan
+                                    nusantara dengan teknik seduh presisi—baik
+                                    espresso-based maupun manual brew. Dirancang
+                                    dengan atmosfer yang tenang dan tata cahaya
+                                    hangat, Lt. 2 adalah ruang ideal untuk
+                                    menyelesaikan pekerjaan, bertukar pikiran,
+                                    atau sekadar menikmati sore yang santai.
+                                </p>
 
-        <!-- Section 1: Makna Kopi (Lt. 2) -->
-        <div class="row justify-content-center mb-4">
-            <div class="col-12 col-lg-9">
-                <div class="card info-section-card p-4 p-md-5">
-                    <div class="row g-4 align-items-center">
-
-                        <!-- Logo Makna (Besar & Bebas Border) -->
-                        <div class="col-12 col-md-5 text-center">
-                            <img src="../images/Logo-Makna.jpg" alt="Makna Kopi Logo" class="about-brand-logo"
-                                onerror="this.src='../images/portrait.jpg'" />
-                        </div>
-
-                        <!-- Penjelasan Makna Kopi -->
-                        <div class="col-12 col-md-7">
-                            <span class="badge badge-makna-accent px-3 py-2 rounded-pill mb-2 fw-semibold">Lt. 2 Makna
-                                Kopi</span>
-                            <h3 class="h4 fw-bold mb-2">The Specialty Coffee Haven</h3>
-                            <p class="text-secondary small mb-3" style="line-height: 1.7;">
-                                <strong>Makna Kopi</strong> berfokus menyajikan racikan biji kopi pilihan nusantara
-                                dengan teknik seduh presisi—baik espresso-based maupun manual brew. Dirancang dengan
-                                atmosfer yang tenang dan tata cahaya hangat, Lt. 2 adalah ruang ideal untuk
-                                menyelesaikan pekerjaan, bertukar pikiran, atau sekadar menikmati sore yang santai.
-                            </p>
-
-                            <!-- 3 Tag Makna (Font Color & Border Aksen Ungu Biru) -->
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge tag-makna px-2 py-2">Specialty Coffee</span>
-                                <span class="badge tag-makna px-2 py-2">Work & Relax</span>
-                                <span class="badge tag-makna px-2 py-2">Slow Bar</span>
+                                <!-- 3 Tag Makna (Font Color & Border Aksen Ungu Biru) -->
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge tag-makna px-2 py-2"
+                                        >Specialty Coffee</span
+                                    >
+                                    <span class="badge tag-makna px-2 py-2"
+                                        >Work & Relax</span
+                                    >
+                                    <span class="badge tag-makna px-2 py-2"
+                                        >Slow Bar</span
+                                    >
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Section 2: Pilar Kayu Resto (Lt. 3) -->
-        <div class="row justify-content-center mb-5">
-            <div class="col-12 col-lg-9">
-                <div class="card info-section-card p-4 p-md-5">
-                    <div class="row g-4 align-items-center">
+            <!-- Section 2: Pilar Kayu Resto (Lt. 3) -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-lg-9">
+                    <div class="card info-section-card p-4 p-md-5">
+                        <div class="row g-4 align-items-center">
+                            <!-- Logo Pilar Kayu (Besar & Bebas Border) -->
+                            <div class="col-12 col-md-5 text-center">
+                                <img
+                                    src="../images/brand logo/Logo-Pilar_Kayu.jpg"
+                                    alt="Pilar Kayu Logo"
+                                    class="about-brand-logo"
+                                />
+                            </div>
 
-                        <!-- Logo Pilar Kayu (Besar & Bebas Border) -->
-                        <div class="col-12 col-md-5 text-center">
-                            <img src="../images/Logo-Pilar_Kayu.jpg" alt="Pilar Kayu Logo" class="about-brand-logo"
-                                onerror="this.src='../images/portrait.jpg'" />
-                        </div>
+                            <!-- Penjelasan Pilar Kayu -->
+                            <div class="col-12 col-md-7">
+                                <span
+                                    class="badge badge-pilar-accent px-3 py-2 rounded-pill mb-2 fw-semibold"
+                                    >Lt. 3 Pilar Kayu Resto</span
+                                >
+                                <h3 class="h4 fw-bold mb-2">
+                                    Hearty Food & Memorable Gatherings
+                                </h3>
+                                <p
+                                    class="text-secondary small mb-3"
+                                    style="line-height: 1.7"
+                                >
+                                    <strong>Pilar Kayu Resto</strong>
+                                    menyempurnakan kunjungan Anda dengan aneka
+                                    sajian kuliner yang lezat dan mengenyangkan.
+                                    Menyajikan perpaduan antara Western Steak
+                                    premium, pasta, serta cita rasa autentik
+                                    menu Nusantara. Lt. 3 siap menjadi tuan
+                                    rumah bagi acara makan malam keluarga,
+                                    perayaan ulang tahun, hingga gathering
+                                    komunitas.
+                                </p>
 
-                        <!-- Penjelasan Pilar Kayu -->
-                        <div class="col-12 col-md-7">
-                            <span class="badge badge-pilar-accent px-3 py-2 rounded-pill mb-2 fw-semibold">Lt. 3 Pilar
-                                Kayu Resto</span>
-                            <h3 class="h4 fw-bold mb-2">Hearty Food & Memorable Gatherings</h3>
-                            <p class="text-secondary small mb-3" style="line-height: 1.7;">
-                                <strong>Pilar Kayu Resto</strong> menyempurnakan kunjungan Anda dengan aneka sajian
-                                kuliner yang lezat dan mengenyangkan. Menyajikan perpaduan antara Western Steak premium,
-                                pasta, serta cita rasa autentik menu Nusantara. Lt. 3 siap menjadi tuan rumah bagi acara
-                                makan malam keluarga, perayaan ulang tahun, hingga gathering komunitas.
-                            </p>
-
-                            <!-- 3 Tag Pilar (Font Color & Border Aksen Orange) -->
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge tag-pilar px-2 py-2">Western Steak</span>
-                                <span class="badge tag-pilar px-2 py-2">Nusantara Dishes</span>
-                                <span class="badge tag-pilar px-2 py-2">Family Dining</span>
+                                <!-- 3 Tag Pilar (Font Color & Border Aksen Orange) -->
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge tag-pilar px-2 py-2"
+                                        >Western Steak</span
+                                    >
+                                    <span class="badge tag-pilar px-2 py-2"
+                                        >Nusantara Dishes</span
+                                    >
+                                    <span class="badge tag-pilar px-2 py-2"
+                                        >Family Dining</span
+                                    >
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
 
-    </main>
+        <!-- ==================== FOOTER ==================== -->
+        <app-footer></app-footer>
 
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="pt-5 pb-3">
-        <div class="container">
-            <div class="row gy-4 mb-4">
-
-                <!-- Footer Col 1: Logos -->
-                <div class="col-12 col-md-4">
-                    <div class="d-flex align-items-center gap-3">
-                        <img src="../images/Logo-Makna.jpg" alt="Logo Makna" class="logo-circle bg-white p-1"
-                            onerror="this.src='../images/portrait.jpg'" />
-                        <img src="../images/Logo-Pilar_Kayu.jpg" alt="Logo Pilar" class="logo-circle bg-white p-1"
-                            onerror="this.src='../images/portrait.jpg'" />
-                    </div>
-                </div>
-
-                <!-- Footer Col 2: Navigation -->
-                <div class="col-12 col-md-4 footer-nav">
-                    <a href="../index.html">Home</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="about.html" class="active">About Us</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
-
-                <!-- Footer Col 3: Find Us -->
-                <div class="col-12 col-md-4">
-                    <h5 class="text-white fw-bold mb-3">Find Us</h5>
-                    <p class="mb-2 d-flex align-items-center gap-3 find-us-text">
-                        <i class="bi bi-geo-alt find-us-icon"></i>
-                        <span>Jl. Hercules No. 5, Bandung</span>
-                    </p>
-                    <p class="mb-2 d-flex align-items-center gap-3 find-us-text">
-                        <i class="bi bi-clock find-us-icon"></i>
-                        <span>Hours: 10.00 - 21.00</span>
-                    </p>
-                    <p class="mb-0 d-flex align-items-center gap-3 find-us-text">
-                        <i class="bi bi-instagram find-us-icon"></i>
-                        <span>@maknakopi.bdg & @pilarkayuresto</span>
-                    </p>
-                </div>
-
-            </div>
-
-            <hr class="border-secondary opacity-25 my-4" />
-
-            <div class="text-center small text-white-50">
-                &copy; 2026 Makna x Pilar. All rights reserved.
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap 5 JS Bundle & Custom JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../script.js"></script>
-</body>
-
+        <!-- Bootstrap 5 JS Bundle & Custom JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../components/header.js"></script>
+        <script src="../components/footer.js"></script>
+        <script src="../script.js"></script>
+    </body>
 </html>

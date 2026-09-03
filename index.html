@@ -1,379 +1,486 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Makna Kopi x Pilar Kayu Resto | Good Coffee & Great Food</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Makna Kopi x Pilar Kayu Resto | Good Coffee & Great Food</title>
+        <!-- Google Fonts: Playfair Display -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Google Fonts: Playfair Display -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+        <!-- Bootstrap 5 CSS & Bootstrap Icons -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+            rel="stylesheet"
+        />
 
-    <!-- Bootstrap 5 CSS & Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-</head>
+    <body>
+        <!-- ==================== NAVBAR ==================== -->
+        <app-navbar></app-navbar>
 
-<body>
-
-    <!-- ==================== NAVBAR ==================== -->
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg py-3">
-            <div class="container d-flex align-items-center justify-content-between">
-
-                <!-- Left: Logos -->
-                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                    <img src="images/Logo-Makna.jpg" alt="Logo Makna" class="logo-circle"
-                        onerror="this.src='images/portrait.jpg'" />
-                    <img src="images/Logo-Pilar_Kayu.jpg" alt="Logo Pilar" class="logo-circle"
-                        onerror="this.src='images/portrait.jpg'" />
-                </a>
-
-                <!-- Center: Navigation Links -->
-                <div class="d-none d-lg-flex align-items-center gap-2">
-                    <a class="nav-link active" href="index.html">Home</a>
-                    <a class="nav-link" href="pages/menu.html">Menu</a>
-                    <a class="nav-link" href="pages/gallery.html">Gallery</a>
-                    <a class="nav-link" href="pages/about.html">About Us</a>
-                    <a class="nav-link" href="pages/contact.html">Contact Us</a>
-                </div>
-
-                <!-- Right: Cart & Profile -->
-                <div class="d-flex align-items-center gap-3">
-                    <a href="pages/cart.html" class="cart-icon-btn">
-                        <i class="bi bi-cart3"></i>
-                        <span class="cart-badge">0</span>
-                    </a>
-                    <a href="pages/profile.html">
-                        <img src="images/profile-placeholder.jpg" alt="Profile" class="avatar-circle border" />
-                    </a>
-                </div>
-
-            </div>
-        </nav>
-    </header>
-
-    <main class="container py-3">
-
-        <!-- ==================== SECTION 1: HERO ==================== -->
-        <section class="mb-5">
-            <div class="hero-card shadow-sm" style="background-image: url('images/landscape.jpg');">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <span class="sub-title-tag d-inline-block mb-2">Two Floors. Two Experiences.</span>
-                    <h1 class="display-5 fw-bold mb-3">Good Coffee<br />Great Food<br />All in One Place.</h1>
-                    <p class="text-light opacity-75 mb-4" style="font-size: 0.95rem;">
-                        Enjoy specialty coffee at Lt. 2 Makna Kopi and Western steak or Nusantara dishes at Lt. 3 Pilar
-                        Kayu Resto.
-                    </p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="pages/menu.html" class="btn btn-orange">Order Online Now &rarr;</a>
-                        <a href="pages/gallery.html" class="btn btn-trans-white">Explore Our Space &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SECTION 2: TWO FLOORS ==================== -->
-        <section class="mb-5 text-center">
-            <!-- <span class="sub-title-tag">Floor Highlights</span> -->
-            <h2 class="h3 mb-4 mt-1">Two Floors, Two Experiences</h2>
-
-            <div class="row g-4 text-start">
-                <!-- Floor 2: Makna Kopi -->
-                <div class="col-12 col-md-6">
-                    <div class="floor-card shadow-sm" style="background-image: url('images/landscape.jpg');">
-                        <div class="floor-overlay"></div>
-                        <div class="floor-content">
-                            <span class="floor-tag">Lt. 2</span>
-                            <h3 class="h4 mb-1">Makna Kopi</h3>
-                            <p class="small text-light opacity-75 mb-0">Specialty coffee, cozy place, perfect to work or
-                                relax.</p>
+        <main class="container py-3">
+            <!-- ==================== SECTION 1: HERO ==================== -->
+            <section class="mb-5">
+                <div
+                    class="hero-card shadow-sm"
+                    style="
+                        background-image: url(&quot;images/ambience/landscape.jpg&quot;);
+                    "
+                >
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <span class="sub-title-tag d-inline-block mb-2"
+                            >Two Floors. Two Experiences.</span
+                        >
+                        <h1 class="display-5 fw-bold mb-3">
+                            Good Coffee<br />Great Food<br />All in One Place.
+                        </h1>
+                        <p
+                            class="text-light opacity-75 mb-4"
+                            style="font-size: 0.95rem"
+                        >
+                            Enjoy specialty coffee at Lt. 2 Makna Kopi and
+                            Western steak or Nusantara dishes at Lt. 3 Pilar
+                            Kayu Resto.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="pages/menu.html" class="btn btn-orange"
+                                >Order Online Now &rarr;</a
+                            >
+                            <a
+                                href="pages/gallery.html"
+                                class="btn btn-trans-white"
+                                >Explore Our Space &rarr;</a
+                            >
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Floor 3: Pilar Kayu -->
-                <div class="col-12 col-md-6">
-                    <div class="floor-card shadow-sm" style="background-image: url('images/landscape.jpg');">
-                        <div class="floor-overlay"></div>
-                        <div class="floor-content">
-                            <span class="floor-tag">Lt. 3</span>
-                            <h3 class="h4 mb-1">Pilar Kayu Resto</h3>
-                            <p class="small text-light opacity-75 mb-0">Western steak, Nusantara dishes, made for
-                                memorable moments.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <!-- ==================== SECTION 2: TWO FLOORS ==================== -->
+            <section class="mb-5 text-center">
+                <!-- <span class="sub-title-tag">Floor Highlights</span> -->
+                <h2 class="h3 mb-4 mt-1">Two Floors, Two Experiences</h2>
 
-        <!-- ==================== SECTION 3: Chef's FAVORITES ==================== -->
-        <section class="mb-5 text-center">
-            <span class="sub-title-tag">Best Seller This Week</span>
-            <h2 class="h3 mb-4 mt-1">Chef 's Favorites</h2>
-
-            <div class="row g-4 text-start">
-                <!-- Card 1: Drink -->
-                <div class="col-6 col-lg-3">
-                    <div class="card food-card h-100 p-2">
-                        <img src="images/portrait.jpg" class="card-img-top food-card-img rounded-3"
-                            alt="Makna Iced Coffee" />
-                        <div class="card-body p-2 d-flex flex-column justify-content-between">
-                            <div>
-                                <h6 class="fw-bold mb-1">Makna Iced Coffee</h6>
-                                <p class="text-danger fw-semibold small mb-3">Rp 24.000</p>
-                            </div>
-                            <button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i> Add to
-                                Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2: Western Main Course -->
-                <div class="col-6 col-lg-3">
-                    <div class="card food-card h-100 p-2">
-                        <img src="images/portrait.jpg" class="card-img-top food-card-img rounded-3" alt="Aglio Olio" />
-                        <div class="card-body p-2 d-flex flex-column justify-content-between">
-                            <div>
-                                <h6 class="fw-bold mb-1">Aglio Olio</h6>
-                                <p class="text-danger fw-semibold small mb-3">Rp 45.000</p>
-                            </div>
-                            <button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i> Add to
-                                Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3: Nusantara / Steak -->
-                <div class="col-6 col-lg-3">
-                    <div class="card food-card h-100 p-2">
-                        <img src="images/portrait.jpg" class="card-img-top food-card-img rounded-3"
-                            alt="Rib Eye Steak" />
-                        <div class="card-body p-2 d-flex flex-column justify-content-between">
-                            <div>
-                                <h6 class="fw-bold mb-1">Rib Eye Steak</h6>
-                                <p class="text-danger fw-semibold small mb-3">Rp 135.000</p>
-                            </div>
-                            <button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i> Add to
-                                Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4: Dessert -->
-                <div class="col-6 col-lg-3">
-                    <div class="card food-card h-100 p-2">
-                        <img src="images/portrait.jpg" class="card-img-top food-card-img rounded-3" alt="Tiramisu" />
-                        <div class="card-body p-2 d-flex flex-column justify-content-between">
-                            <div>
-                                <h6 class="fw-bold mb-1">Tiramisu</h6>
-                                <p class="text-danger fw-semibold small mb-3">Rp 32.000</p>
-                            </div>
-                            <button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i> Add to
-                                Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-4">
-                <a href="pages/menu.html" class="btn btn-outline-orange">Explore Full Menu &rarr;</a>
-            </div>
-        </section>
-
-        <!-- ==================== SECTION 4: FEEL THE AMBIENCE (SLIDER CAROUSEL) ==================== -->
-        <section class="mb-5 text-center">
-            <span class="sub-title-tag">Gallery & Atmosphere</span>
-            <h2 class="h3 mb-4 mt-1">Feel the Ambience</h2>
-
-            <div class="d-flex align-items-center justify-content-center gap-3 my-3">
-                <!-- Manual Arrow Left -->
-                <button id="prevAmbienceBtn" class="carousel-nav-btn flex-shrink-0" type="button" aria-label="Previous">
-                    <i class="bi bi-chevron-left"></i>
-                </button>
-
-                <!-- Bootstrap Carousel 5 Slide -->
-                <div class="carousel-wrapper">
-                    <div id="ambienceCarousel" class="carousel slide" data-bs-ride="carousel">
-
-                        <div class="carousel-inner shadow-sm rounded-4">
-                            <div class="carousel-item active" data-bs-interval="3500">
-                                <div class="carousel-img-container">
-                                    <img src="images/landscape.jpg" alt="Ambience 1" />
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-bs-interval="3500">
-                                <div class="carousel-img-container">
-                                    <img src="images/landscape.jpg" alt="Ambience 2" />
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-bs-interval="3500">
-                                <div class="carousel-img-container">
-                                    <img src="images/landscape.jpg" alt="Ambience 3" />
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-bs-interval="3500">
-                                <div class="carousel-img-container">
-                                    <img src="images/landscape.jpg" alt="Ambience 4" />
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-bs-interval="3500">
-                                <div class="carousel-img-container">
-                                    <img src="images/landscape.jpg" alt="Ambience 5" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Dots Indicator -->
-                        <div class="carousel-indicators position-static mt-3 mb-0">
-                            <button type="button" data-bs-target="#ambienceCarousel" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#ambienceCarousel" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#ambienceCarousel" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#ambienceCarousel" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#ambienceCarousel" data-bs-slide-to="4"
-                                aria-label="Slide 5"></button>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Manual Arrow Right -->
-                <button id="nextAmbienceBtn" class="carousel-nav-btn flex-shrink-0" type="button" aria-label="Next">
-                    <i class="bi bi-chevron-right"></i>
-                </button>
-            </div>
-
-            <div class="mt-4">
-                <a href="pages/gallery.html" class="btn btn-outline-orange">View Full Gallery &rarr;</a>
-            </div>
-        </section>
-
-        <!-- ==================== SECTION 5: OUR STORY  ==================== -->
-        <section class="mb-4">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-9">
-                    <div class="card info-section-card p-4">
-                        <div class="row g-4 align-items-center">
-                            <div class="col-12 col-md-5">
-                                <img src="images/portrait.jpg"
-                                    class="img-fluid rounded-4 w-100 object-fit-cover shadow-sm" style="height: 200px;"
-                                    alt="Our Story" />
-                            </div>
-                            <div class="col-12 col-md-7">
-                                <h3 class="h4 fw-bold mb-2">Our Story</h3>
-                                <p class="text-secondary small mb-4" style="line-height: 1.6;">
-                                    Combining a coffee shop and restaurant under one roof. We could try to come out with
-                                    a most specialty coffee shop and western in combination.
+                <div class="row g-4 text-start">
+                    <!-- Floor 2: Makna Kopi -->
+                    <div class="col-12 col-md-6">
+                        <div
+                            class="floor-card shadow-sm"
+                            style="
+                                background-image: url(&quot;images/ambience/makna.jpg&quot;);
+                            "
+                        >
+                            <div class="floor-overlay"></div>
+                            <div class="floor-content">
+                                <span class="floor-tag">Lt. 2</span>
+                                <h3 class="h4 mb-1">Makna Kopi</h3>
+                                <p class="small text-light opacity-75 mb-0">
+                                    Specialty coffee, cozy place, perfect to
+                                    work or relax.
                                 </p>
-                                <a href="pages/about.html" class="btn btn-orange btn-sm px-4">Read Our Story &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floor 3: Pilar Kayu -->
+                    <div class="col-12 col-md-6">
+                        <div
+                            class="floor-card shadow-sm"
+                            style="
+                                background-image: url(&quot;images/ambience/pilar.jpg&quot;);
+                            "
+                        >
+                            <div class="floor-overlay"></div>
+                            <div class="floor-content">
+                                <span class="floor-tag">Lt. 3</span>
+                                <h3 class="h4 mb-1">Pilar Kayu Resto</h3>
+                                <p class="small text-light opacity-75 mb-0">
+                                    Western steak, Nusantara dishes, made for
+                                    memorable moments.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- ==================== SECTION 6: VISIT US ==================== -->
-        <section class="mb-5">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-9">
-                    <div class="card info-section-card p-4">
-                        <div class="row g-4 align-items-center">
-                            <!-- Text Info Left -->
-                            <div class="col-12 col-md-7">
-                                <h3 class="h4 fw-bold mb-3">Visit Us</h3>
-                                <div class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium">
-                                    <i class="bi bi-clock"></i>
-                                    <span>10.00 - 21.00 Daily</span>
+            <!-- ==================== SECTION 3: Chef's FAVORITES ==================== -->
+            <section class="mb-5 text-center">
+                <span class="sub-title-tag">Best Seller This Week</span>
+                <h2 class="h3 mb-4 mt-1">Chef 's Favorites</h2>
+
+                <div class="row g-4 text-start">
+                    <!-- Card 1: Drink -->
+                    <div class="col-6 col-lg-3">
+                        <div class="card food-card h-100 p-2">
+                            <img
+                                src="images/menus/beverages/makna iced coffee.jpg"
+                                class="card-img-top food-card-img rounded-3"
+                                alt="Makna Iced Coffee"
+                            />
+                            <div
+                                class="card-body p-2 d-flex flex-column justify-content-between"
+                            >
+                                <div>
+                                    <h6 class="fw-bold mb-1">
+                                        Makna Iced Coffee
+                                    </h6>
+                                    <p
+                                        class="text-danger fw-semibold small mb-3"
+                                    >
+                                        Rp 24.000
+                                    </p>
                                 </div>
-                                <div class="d-flex align-items-center gap-2 mb-4 text-dark small fw-medium">
-                                    <i class="bi bi-geo-alt"></i>
-                                    <span>Jl. Hercules No. 5, Bandung</span>
-                                </div>
-                                <a href="pages/contact.html" class="btn btn-outline-orange btn-sm px-4">Contact Us
-                                    &rarr;</a>
+                                <button class="btn btn-orange btn-sm w-100">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to
+                                    Cart
+                                </button>
                             </div>
+                        </div>
+                    </div>
 
-                            <!-- Map Location Right -->
-                            <div class="col-12 col-md-5">
-                                <img src="images/landscape.jpg"
-                                    class="img-fluid rounded-4 w-100 object-fit-cover border shadow-sm"
-                                    style="height: 160px;" alt="Map Location" />
+                    <!-- Card 2: Western Main Course -->
+                    <div class="col-6 col-lg-3">
+                        <div class="card food-card h-100 p-2">
+                            <img
+                                src="images/menus/foods/spaghetti carbonara.jpg"
+                                class="card-img-top food-card-img rounded-3"
+                                alt="Spaghetti Carbonara"
+                            />
+                            <div
+                                class="card-body p-2 d-flex flex-column justify-content-between"
+                            >
+                                <div>
+                                    <h6 class="fw-bold mb-1">
+                                        Spaghetti Carbonara
+                                    </h6>
+                                    <p
+                                        class="text-danger fw-semibold small mb-3"
+                                    >
+                                        Rp 45.000
+                                    </p>
+                                </div>
+                                <button class="btn btn-orange btn-sm w-100">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to
+                                    Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Nusantara / Steak -->
+                    <div class="col-6 col-lg-3">
+                        <div class="card food-card h-100 p-2">
+                            <img
+                                src="images/menus/foods/tenderloin steak.jpg"
+                                class="card-img-top food-card-img rounded-3"
+                                alt="Tenderloin Steak"
+                            />
+                            <div
+                                class="card-body p-2 d-flex flex-column justify-content-between"
+                            >
+                                <div>
+                                    <h6 class="fw-bold mb-1">
+                                        Tenderloin Steak
+                                    </h6>
+                                    <p
+                                        class="text-danger fw-semibold small mb-3"
+                                    >
+                                        Rp 135.000
+                                    </p>
+                                </div>
+                                <button class="btn btn-orange btn-sm w-100">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to
+                                    Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Dessert -->
+                    <div class="col-6 col-lg-3">
+                        <div class="card food-card h-100 p-2">
+                            <img
+                                src="images/menus/desserts/tiramisu.jpg"
+                                class="card-img-top food-card-img rounded-3"
+                                alt="Tiramisu"
+                            />
+                            <div
+                                class="card-body p-2 d-flex flex-column justify-content-between"
+                            >
+                                <div>
+                                    <h6 class="fw-bold mb-1">Tiramisu</h6>
+                                    <p
+                                        class="text-danger fw-semibold small mb-3"
+                                    >
+                                        Rp 32.000
+                                    </p>
+                                </div>
+                                <button class="btn btn-orange btn-sm w-100">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to
+                                    Cart
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-    </main>
+                <div class="mt-4">
+                    <a href="pages/menu.html" class="btn btn-outline-orange"
+                        >Explore Full Menu &rarr;</a
+                    >
+                </div>
+            </section>
 
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="pt-5 pb-3">
-        <div class="container">
-            <div class="row gy-4 mb-4">
+            <!-- ==================== SECTION 4: FEEL THE AMBIENCE (SLIDER CAROUSEL) ==================== -->
+            <section class="mb-5 text-center">
+                <span class="sub-title-tag">Gallery & Atmosphere</span>
+                <h2 class="h3 mb-4 mt-1">Feel the Ambience</h2>
 
-                <!-- Footer Col 1: Logos (Tanpa 'x' & Tanpa Teks Bawah) -->
-                <div class="col-12 col-md-4">
-                    <div class="d-flex align-items-center gap-3">
-                        <img src="images/Logo-Makna.jpg" alt="Logo Makna" class="logo-circle bg-white p-1"
-                            onerror="this.src='images/portrait.jpg'" />
-                        <img src="images/Logo-Pilar_Kayu.jpg" alt="Logo Pilar" class="logo-circle bg-white p-1"
-                            onerror="this.src='images/portrait.jpg'" />
+                <div
+                    class="d-flex align-items-center justify-content-center gap-3 my-3"
+                >
+                    <!-- Manual Arrow Left -->
+                    <button
+                        id="prevAmbienceBtn"
+                        class="carousel-nav-btn flex-shrink-0"
+                        type="button"
+                        aria-label="Previous"
+                    >
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+
+                    <!-- Bootstrap Carousel 5 Slide -->
+                    <div class="carousel-wrapper">
+                        <div
+                            id="ambienceCarousel"
+                            class="carousel slide"
+                            data-bs-ride="carousel"
+                        >
+                            <div class="carousel-inner shadow-sm rounded-4">
+                                <div
+                                    class="carousel-item"
+                                    data-bs-interval="3500"
+                                >
+                                    <div class="carousel-img-container">
+                                        <img
+                                            src="images/ambience/front.jpg"
+                                            alt="Ambience 1"
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="carousel-item active"
+                                    data-bs-interval="3500"
+                                >
+                                    <div class="carousel-img-container">
+                                        <img
+                                            src="images/ambience/makna.jpg"
+                                            alt="Ambience 2"
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="carousel-item"
+                                    data-bs-interval="3500"
+                                >
+                                    <div class="carousel-img-container">
+                                        <img
+                                            src="images/ambience/pilar.jpg"
+                                            alt="Ambience 3"
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="carousel-item"
+                                    data-bs-interval="3500"
+                                >
+                                    <div class="carousel-img-container">
+                                        <img
+                                            src="images/ambience/tv.jpg"
+                                            alt="Ambience 4"
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="carousel-item"
+                                    data-bs-interval="3500"
+                                >
+                                    <div class="carousel-img-container">
+                                        <img
+                                            src="images/ambience/loby day.jpg"
+                                            alt="Ambience 5"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Dots Indicator -->
+                            <div
+                                class="carousel-indicators position-static mt-3 mb-0"
+                            >
+                                <button
+                                    type="button"
+                                    data-bs-target="#ambienceCarousel"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#ambienceCarousel"
+                                    data-bs-slide-to="1"
+                                    aria-label="Slide 2"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#ambienceCarousel"
+                                    data-bs-slide-to="2"
+                                    aria-label="Slide 3"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#ambienceCarousel"
+                                    data-bs-slide-to="3"
+                                    aria-label="Slide 4"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#ambienceCarousel"
+                                    data-bs-slide-to="4"
+                                    aria-label="Slide 5"
+                                ></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Manual Arrow Right -->
+                    <button
+                        id="nextAmbienceBtn"
+                        class="carousel-nav-btn flex-shrink-0"
+                        type="button"
+                        aria-label="Next"
+                    >
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="mt-4">
+                    <a href="pages/gallery.html" class="btn btn-outline-orange"
+                        >View Full Gallery &rarr;</a
+                    >
+                </div>
+            </section>
+
+            <!-- ==================== SECTION 5: OUR STORY  ==================== -->
+            <section class="mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9">
+                        <div class="card info-section-card p-4">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-12 col-md-5">
+                                    <img
+                                        src="images/ambience/front.jpg"
+                                        class="img-fluid rounded-4 w-100 object-fit-cover shadow-sm"
+                                        style="height: 200px"
+                                        alt="Our Story"
+                                    />
+                                </div>
+                                <div class="col-12 col-md-7">
+                                    <h3 class="h4 fw-bold mb-2">Our Story</h3>
+                                    <p
+                                        class="text-secondary small mb-4"
+                                        style="line-height: 1.6"
+                                    >
+                                        Combining a coffee shop and restaurant
+                                        under one roof. We could try to come out
+                                        with a most specialty coffee shop and
+                                        western in combination.
+                                    </p>
+                                    <a
+                                        href="pages/about.html"
+                                        class="btn btn-orange btn-sm px-4"
+                                        >Read Our Story &rarr;</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Footer Col 2: Complete Navigation -->
-                <div class="col-12 col-md-4 footer-nav">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="pages/menu.html">Menu</a>
-                    <a href="pages/gallery.html">Gallery</a>
-                    <a href="pages/about.html">About Us</a>
-                    <a href="pages/contact.html">Contact Us</a>
+            <!-- ==================== SECTION 6: VISIT US ==================== -->
+            <section class="mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9">
+                        <div class="card info-section-card p-4">
+                            <div class="row g-4 align-items-center">
+                                <!-- Text Info Left -->
+                                <div class="col-12 col-md-7">
+                                    <h3 class="h4 fw-bold mb-3">Visit Us</h3>
+                                    <div
+                                        class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"
+                                    >
+                                        <i class="bi bi-clock"></i>
+                                        <span>10.00 - 21.00 Daily</span>
+                                    </div>
+                                    <div
+                                        class="d-flex align-items-center gap-2 mb-4 text-dark small fw-medium"
+                                    >
+                                        <i class="bi bi-geo-alt"></i>
+                                        <span>Jl. Hercules No. 5, Bandung</span>
+                                    </div>
+                                    <a
+                                        href="pages/contact.html"
+                                        class="btn btn-outline-orange btn-sm px-4"
+                                        >Contact Us &rarr;</a
+                                    >
+                                </div>
+
+                                <!-- Map Location Right -->
+                                <div class="col-12 col-md-5">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22407.00032360707!2d107.5673141785689!3d-6.886355069086157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7b544e4e34d%3A0x8a77e46ae34a6fdb!2sPilar%20Kayu%20Resto!5e0!3m2!1sen!2sid!4v1788409666859!5m2!1sen!2sid"
+                                        class="img-fluid rounded-4 w-100 object-fit-cover border shadow-sm"
+                                        width="220"
+                                        height="160px"
+                                        style="border: 0"
+                                        allowfullscreen=""
+                                        loading="lazy"
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        alt="Map Location"
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
+        </main>
 
-                <!-- Footer Col 3: Find Us -->
-                <div class="col-12 col-md-4">
-                    <h5 class="text-white fw-bold mb-3">Find Us</h5>
-                    <p class="mb-2 d-flex align-items-center gap-3 find-us-text">
-                        <i class="bi bi-geo-alt find-us-icon"></i>
-                        <span>Jl. Hercules No. 5, Bandung</span>
-                    </p>
-                    <p class="mb-2 d-flex align-items-center gap-3 find-us-text">
-                        <i class="bi bi-clock find-us-icon"></i>
-                        <span>Hours: 10.00 - 21.00</span>
-                    </p>
-                    <p class="mb-0 d-flex align-items-center gap-3 find-us-text">
-                        <i class="bi bi-instagram find-us-icon"></i>
-                        <span>@maknakopi.bdg & @pilarkayuresto</span>
-                    </p>
-                </div>
+        <!-- ==================== FOOTER ==================== -->
+        <app-footer></app-footer>
 
-            </div>
-
-            <hr class="border-secondary opacity-25 my-4" />
-
-            <div class="text-center small text-white-50">
-                &copy; 2026 Makna Kopi x Pilar Kayu Resto. All rights reserved.
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap 5 JS Bundle & Custom JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script src="../cart.js"></script>
-</body>
-
+        <!-- Bootstrap 5 JS Bundle & Custom JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="components/header.js"></script>
+        <script src="components/footer.js"></script>
+        <script src="script.js"></script>
+        <script src="../cart.js"></script>
+    </body>
 </html>
