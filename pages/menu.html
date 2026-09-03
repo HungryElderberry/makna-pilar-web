@@ -1,1158 +1,2283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu - Makna x Pilar</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu - Makna x Pilar</title>
+        <!-- Google Fonts: Playfair Display -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Google Fonts: Playfair Display -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+        <!-- Bootstrap 5 CSS & Bootstrap Icons -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+            rel="stylesheet"
+        />
 
-    <!-- Bootstrap 5 CSS & Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../style.css" />
+    </head>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../style.css" />
-</head>
-
-<body>
-
-    <!-- ==================== NAVBAR ==================== -->
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg py-3">
-            <div class="container d-flex align-items-center justify-content-between">
-
-                <!-- Left: Logos -->
-                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
-                    <img src="../images/Logo-Makna.jpg" alt="Logo Makna" class="logo-circle" />
-                    <img src="../images/Logo-Pilar_Kayu.jpg" alt="Logo Pilar" class="logo-circle" />
-                </a>
-
-                <!-- Center: Navigation Links -->
-                <div class="d-none d-lg-flex align-items-center gap-2">
-                    <a class="nav-link" href="../index.html">Home</a>
-                    <a class="nav-link active" href="menu.html">Menu</a>
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                    <a class="nav-link" href="about.html">About Us</a>
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </div>
-
-                <!-- Right: Cart & Profile -->
-                <div class="d-flex align-items-center gap-3">
-                    <a href="cart.html" class="cart-icon-btn">
-                        <i class="bi bi-cart3"></i>
-                        <span class="cart-badge">0</span>
+    <body>
+        <!-- ==================== NAVBAR ==================== -->
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg py-3">
+                <div
+                    class="container d-flex align-items-center justify-content-between"
+                >
+                    <!-- Left: Logos -->
+                    <a
+                        class="navbar-brand d-flex align-items-center gap-2"
+                        href="../index.html"
+                    >
+                        <img
+                            src="../images/Logo-Makna.jpg"
+                            alt="Logo Makna"
+                            class="logo-circle"
+                        />
+                        <img
+                            src="../images/Logo-Pilar_Kayu.jpg"
+                            alt="Logo Pilar"
+                            class="logo-circle"
+                        />
                     </a>
-                    <a href="profile.html">
-                        <img src="../images/profile-placeholder.jpg" alt="Profile" class="avatar-circle border" />
-                    </a>
-                </div>
 
-            </div>
-        </nav>
-    </header>
+                    <!-- Center: Navigation Links -->
+                    <div class="d-none d-lg-flex align-items-center gap-2">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </div>
 
-    <!-- ==================== HERO / HEADER MENU ==================== -->
-    <div class="container text-center pt-4 pb-2">
-        <span class="sub-title-tag">Our Selections</span>
-        <h1 class="display-6 fw-bold mt-1">Discover Our Menu</h1>
-        <p class="text-secondary small mx-auto" style="max-width: 570px;">
-            Crafted with precision by Makna Kopi and curated with culinary passion by Pilar Kayu Resto.
-        </p>
-    </div>
-
-    <main class="container py-4">
-
-        <!-- ==================== SECTION 1: BEVERAGES ==================== -->
-        <div class="d-flex align-items-center gap-3 mb-4 mt-2">
-            <h2 class="h2 fw-bold mb-0 text-dark">Beverages</h2>
-            <div class="flex-grow-1 border-bottom border-2 opacity-25"></div>
-        </div>
-
-        <!-- 1. Coffee (DEFAULT OPEN) -->
-        <div class="mb-4">
-            <button class="menu-collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCoffee"
-                aria-expanded="true" aria-controls="collapseCoffee">
-                <span>Coffee</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse show mt-3" id="collapseCoffee">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2">
-                            <img src="../images/portrait.jpg" class="card-img-top food-card-img rounded-3"
-                                alt="Single Espresso" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Single Espresso</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 18.000</p>
-                                </div>
-                                <button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i> Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2">
-                            <img src="../images/portrait.jpg" class="card-img-top food-card-img rounded-3"
-                                alt="Americano" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Americano</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 22.000</p>
-                                </div>
-                                <button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i> Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2">
-                            <img src="../images/portrait.jpg" class="card-img-top food-card-img rounded-3"
-                                alt="Cafe Latte" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Cafe Latte</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 28.000</p>
-                                </div>
-                                <button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i> Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2">
-                            <img src="../images/portrait.jpg" class="card-img-top food-card-img rounded-3"
-                                alt="Cappuccino" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Cappuccino</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 28.000</p>
-                                </div>
-                                <button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i> Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2">
-                            <img src="../images/portrait.jpg" class="card-img-top food-card-img rounded-3"
-                                alt="Caramel Macchiato" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Caramel Macchiato</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 32.000</p>
-                                </div>
-                                <button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i> Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2">
-                            <img src="../images/portrait.jpg" class="card-img-top food-card-img rounded-3"
-                                alt="Makna Aren Coffee" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Makna Aren Coffee</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 24.000</p>
-                                </div>
-                                <button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i> Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 2. Milk Based (COLLAPSED) -->
-        <div class="mb-4">
-            <button class="menu-collapse-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseMilk" aria-expanded="false" aria-controls="collapseMilk">
-                <span>Milk Based</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse mt-3" id="collapseMilk">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Matcha" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Kyoto Matcha Latte</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 30.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Chocolate" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Dark Chocolate</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 28.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Red Velvet" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Red Velvet Supreme</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 28.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Taro" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Taro Milky Way</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 26.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Cookies" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Cookies & Cream</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 32.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Hojicha" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Roasted Hojicha</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 30.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 3. Mocktail (COLLAPSED) -->
-        <div class="mb-4">
-            <button class="menu-collapse-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseMocktail" aria-expanded="false" aria-controls="collapseMocktail">
-                <span>Mocktail</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse mt-3" id="collapseMocktail">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Sunset Orange" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Sunset in Bandung</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 30.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Berry Breeze" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Berry Sparkle Breeze</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 32.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Tropical Mango" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Tropical Mango Splash</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 32.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Lychee Fizz" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Lychee Blossom Fizz</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 28.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Blue Lagoon" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Blue Ocean Waves</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 30.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Cucumber Lime" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Cucumber Mint Cool</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 28.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 4. Tea (COLLAPSED) -->
-        <div class="mb-4">
-            <button class="menu-collapse-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTea" aria-expanded="false" aria-controls="collapseTea">
-                <span>Tea</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse mt-3" id="collapseTea">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Earl Grey" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Earl Grey Reserve</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 20.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Chamomile" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Chamomile Herbal</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 22.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Lemon Tea" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Fresh Lemon Tea</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 22.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Peach Tea" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Sweet Peach Tea</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 24.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Lychee Tea" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Lychee Iced Tea</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 24.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Green Tea" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Japanese Sencha</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 22.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 5. Juice (COLLAPSED) -->
-        <div class="mb-4">
-            <button class="menu-collapse-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseJuice" aria-expanded="false" aria-controls="collapseJuice">
-                <span>Juice</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse mt-3" id="collapseJuice">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Orange Juice" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Fresh Orange Juice</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 25.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Avocado Juice" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Avocado Delight</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 28.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Strawberry Juice" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Pure Strawberry</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 26.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Watermelon Juice" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Watermelon Cooler</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 22.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Dragon Fruit" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Red Dragon Fruit</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 25.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Green Detox" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Green Detox Healthy</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 30.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 6. Mojito (COLLAPSED) -->
-        <div class="mb-4">
-            <button class="menu-collapse-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseMojito" aria-expanded="false" aria-controls="collapseMojito">
-                <span>Mojito</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse mt-3" id="collapseMojito">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Classic Mojito" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Classic Virgin Mojito</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 26.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Strawberry Mojito" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Strawberry Mojito</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 28.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Passion Fruit" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Passion Mojito</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 28.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Blueberry Mojito" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Blueberry Mint Mojito</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 30.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Kiwi Mojito" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Kiwi Spark Mojito</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 30.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Pineapple Mojito" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Pineapple Sunset Mojito</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 28.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- ==================== SECTION 1: FOOD ==================== -->
-        <div class="d-flex align-items-center gap-3 mb-4 mt-5">
-            <h2 class="h2 fw-bold mb-0 text-dark">Food</h2>
-            <div class="flex-grow-1 border-bottom border-2 opacity-25"></div>
-        </div>
-
-        <!-- 1. Western & Steak (COLLAPSED) -->
-        <div class="mb-4">
-            <button class="menu-collapse-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseWestern" aria-expanded="false" aria-controls="collapseWestern">
-                <span>Western & Steak</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse mt-3" id="collapseWestern">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Rib Eye Steak" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Rib Eye Australian Steak</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 135.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Sirloin Steak" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Sirloin Meltique Steak</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 120.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="T-Bone Steak" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Prime T-Bone Steak</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 160.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Grilled Salmon" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Norwegian Grilled Salmon</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 115.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Chicken Cordon Bleu" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Chicken Cordon Bleu</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 55.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Fish and Chips" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Classic Fish and Chips</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 48.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 2. Asian Delight (COLLAPSED) -->
-        <div class="mb-4">
-            <button class="menu-collapse-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseAsian" aria-expanded="false" aria-controls="collapseAsian">
-                <span>Asian Delight</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse mt-3" id="collapseAsian">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Beef Teriyaki" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Beef Teriyaki Don</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 48.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Katsu Curry" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Chicken Katsu Curry</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 45.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Tom Yum" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Tom Yum Goong Seafood</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 52.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Pad Thai" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Special Pad Thai Noodle</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 42.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Beef Yakiniku" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Beef Yakiniku Ricebowl</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 48.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Crispy Dory" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Crispy Dory Rice</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 40.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 3. Nusantara (COLLAPSED) -->
-        <div class="mb-4">
-            <button class="menu-collapse-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseNusantara" aria-expanded="false" aria-controls="collapseNusantara">
-                <span>Nusantara</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse mt-3" id="collapseNusantara">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Sop Buntut" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Sop Buntut Kuah / Bakar</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 85.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Nasi Goreng" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Nasi Goreng Pilar Kayu</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 42.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Ayam Lengkuas" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Ayam Lengkuas Serundeng</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 38.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Soto Betawi" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Soto Betawi Daging Sapi</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 45.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Iga Bakar" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Iga Sapi Bakar Madu</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 78.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Bebek Crispy" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Bebek Crispy Sambal Korek</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 50.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 4. Bites (COLLAPSED) -->
-        <div class="mb-4">
-            <button class="menu-collapse-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseBites" aria-expanded="false" aria-controls="collapseBites">
-                <span>Bites</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse mt-3" id="collapseBites">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Truffle Fries" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Truffle Parmesan Fries</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 30.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Chicken Wings" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Spicy BBQ Wings</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 35.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Calamari" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Crispy Golden Calamari</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 38.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Nachos" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Beef Supreme Nachos</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 38.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Mozzarella Sticks" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Fried Mozzarella Sticks</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 32.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Tahu Cabe Garam" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Tahu Crispy Cabe Garam</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 22.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 5. Burger & Pasta (COLLAPSED) -->
-        <div class="mb-4">
-            <button class="menu-collapse-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseBurgerPasta" aria-expanded="false" aria-controls="collapseBurgerPasta">
-                <span>Burger & Pasta</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse mt-3" id="collapseBurgerPasta">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Aglio Olio" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Spaghetti Aglio Olio</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 45.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Carbonara" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Fettuccine Carbonara</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 48.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Bolognese" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Classic Beef Bolognese</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 46.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Cheeseburger" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Double Cheeseburger</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 52.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Chicken Burger" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Crispy Chicken Burger</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 44.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Penne Pesto" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Penne Basil Pesto</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 45.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- ############################################################ -->
-        <!-- ==================== SECTION 3: DESSERT ==================== -->
-        <!-- ############################################################ -->
-        <div class="d-flex align-items-center gap-3 mb-4 mt-5">
-            <h2 class="h2 fw-bold mb-0 text-dark">Dessert</h2>
-            <div class="flex-grow-1 border-bottom border-2 opacity-25"></div>
-        </div>
-
-        <!-- Dessert Accordion (COLLAPSED) -->
-        <div class="mb-5">
-            <button class="menu-collapse-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseDessert" aria-expanded="false" aria-controls="collapseDessert">
-                <span>Desserts</span>
-                <i class="bi bi-chevron-up chevron-icon"></i>
-            </button>
-
-            <div class="collapse mt-3" id="collapseDessert">
-                <div class="row g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Tiramisu" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Classic Italian Tiramisu</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 32.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Churros" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Churros con Chocolate</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 28.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card food-card h-100 p-2"><img src="../images/portrait.jpg"
-                                class="card-img-top food-card-img rounded-3" alt="Burnt Cheesecake" />
-                            <div class="card-body p-2 d-flex flex-column justify-content-between">
-                                <div>
-                                    <h6 class="fw-bold mb-1">Basque Burnt Cheesecake</h6>
-                                    <p class="text-danger fw-semibold small mb-3">Rp 35.000</p>
-                                </div><button class="btn btn-orange btn-sm w-100"><i class="bi bi-cart-plus me-1"></i>
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="pt-5 pb-3">
-        <div class="container">
-            <div class="row gy-4 mb-4">
-
-                <!-- Footer Col 1: Logos -->
-                <div class="col-12 col-md-4">
+                    <!-- Right: Cart & Profile -->
                     <div class="d-flex align-items-center gap-3">
-                        <img src="../images/Logo-Makna.jpg" alt="Logo Makna" class="logo-circle bg-white p-1" />
-                        <img src="../images/Logo-Pilar_Kayu.jpg" alt="Logo Pilar" class="logo-circle bg-white p-1" />
+                        <a href="cart.html" class="cart-icon-btn">
+                            <i class="bi bi-cart3"></i>
+                            <span class="cart-badge">0</span>
+                        </a>
+                        <a href="profile.html">
+                            <img
+                                src="../images/profile-placeholder.jpg"
+                                alt="Profile"
+                                class="avatar-circle border"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ==================== HERO / HEADER MENU ==================== -->
+        <div class="container text-center pt-4 pb-2">
+            <span class="sub-title-tag">Our Selections</span>
+            <h1 class="display-6 fw-bold mt-1">Discover Our Menu</h1>
+            <p class="text-secondary small mx-auto" style="max-width: 570px">
+                Crafted with precision by Makna Kopi and curated with culinary
+                passion by Pilar Kayu Resto.
+            </p>
+        </div>
+
+        <main class="container py-4">
+            <!-- ==================== SECTION 1: BEVERAGES ==================== -->
+            <div class="d-flex align-items-center gap-3 mb-4 mt-2">
+                <h2 class="h2 fw-bold mb-0 text-dark">Beverages</h2>
+                <div
+                    class="flex-grow-1 border-bottom border-2 opacity-25"
+                ></div>
+            </div>
+
+            <!-- 1. Coffee (DEFAULT OPEN) -->
+            <div class="mb-4">
+                <button
+                    class="menu-collapse-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseCoffee"
+                    aria-expanded="true"
+                    aria-controls="collapseCoffee"
+                >
+                    <span>Coffee</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse show mt-3" id="collapseCoffee">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Single Espresso"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Single Espresso
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 18.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Americano"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Americano</h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 22.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Cafe Latte"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Cafe Latte</h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 28.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Cappuccino"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Cappuccino</h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 28.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Caramel Macchiato"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Caramel Macchiato
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 32.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Makna Aren Coffee"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Makna Aren Coffee
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 24.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Milk Based (COLLAPSED) -->
+            <div class="mb-4">
+                <button
+                    class="menu-collapse-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseMilk"
+                    aria-expanded="false"
+                    aria-controls="collapseMilk"
+                >
+                    <span>Milk Based</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse mt-3" id="collapseMilk">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Matcha"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Kyoto Matcha Latte
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 30.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Chocolate"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Dark Chocolate
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 28.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Red Velvet"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Red Velvet Supreme
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 28.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Taro"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Taro Milky Way
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 26.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Cookies"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Cookies & Cream
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 32.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Hojicha"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Roasted Hojicha
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 30.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Mocktail (COLLAPSED) -->
+            <div class="mb-4">
+                <button
+                    class="menu-collapse-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseMocktail"
+                    aria-expanded="false"
+                    aria-controls="collapseMocktail"
+                >
+                    <span>Mocktail</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse mt-3" id="collapseMocktail">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Sunset Orange"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Sunset in Bandung
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 30.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Berry Breeze"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Berry Sparkle Breeze
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 32.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Tropical Mango"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Tropical Mango Splash
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 32.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Lychee Fizz"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Lychee Blossom Fizz
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 28.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Blue Lagoon"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Blue Ocean Waves
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 30.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Cucumber Lime"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Cucumber Mint Cool
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 28.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Tea (COLLAPSED) -->
+            <div class="mb-4">
+                <button
+                    class="menu-collapse-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTea"
+                    aria-expanded="false"
+                    aria-controls="collapseTea"
+                >
+                    <span>Tea</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse mt-3" id="collapseTea">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Earl Grey"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Earl Grey Reserve
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 20.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Chamomile"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Chamomile Herbal
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 22.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Lemon Tea"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Fresh Lemon Tea
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 22.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Peach Tea"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Sweet Peach Tea
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 24.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Lychee Tea"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Lychee Iced Tea
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 24.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Green Tea"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Japanese Sencha
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 22.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Juice (COLLAPSED) -->
+            <div class="mb-4">
+                <button
+                    class="menu-collapse-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseJuice"
+                    aria-expanded="false"
+                    aria-controls="collapseJuice"
+                >
+                    <span>Juice</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse mt-3" id="collapseJuice">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Orange Juice"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Fresh Orange Juice
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 25.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Avocado Juice"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Avocado Delight
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 28.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Strawberry Juice"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Pure Strawberry
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 26.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Watermelon Juice"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Watermelon Cooler
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 22.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Dragon Fruit"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Red Dragon Fruit
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 25.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Green Detox"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Green Detox Healthy
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 30.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Mojito (COLLAPSED) -->
+            <div class="mb-4">
+                <button
+                    class="menu-collapse-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseMojito"
+                    aria-expanded="false"
+                    aria-controls="collapseMojito"
+                >
+                    <span>Mojito</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse mt-3" id="collapseMojito">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Classic Mojito"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Classic Virgin Mojito
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 26.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Strawberry Mojito"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Strawberry Mojito
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 28.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Passion Fruit"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Passion Mojito
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 28.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Blueberry Mojito"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Blueberry Mint Mojito
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 30.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Kiwi Mojito"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Kiwi Spark Mojito
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 30.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Pineapple Mojito"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Pineapple Sunset Mojito
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 28.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SECTION 1: FOOD ==================== -->
+            <div class="d-flex align-items-center gap-3 mb-4 mt-5">
+                <h2 class="h2 fw-bold mb-0 text-dark">Food</h2>
+                <div
+                    class="flex-grow-1 border-bottom border-2 opacity-25"
+                ></div>
+            </div>
+
+            <!-- 1. Western & Steak (COLLAPSED) -->
+            <div class="mb-4">
+                <button
+                    class="menu-collapse-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseWestern"
+                    aria-expanded="false"
+                    aria-controls="collapseWestern"
+                >
+                    <span>Western & Steak</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse mt-3" id="collapseWestern">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Rib Eye Steak"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Rib Eye Australian Steak
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 135.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Sirloin Steak"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Sirloin Meltique Steak
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 120.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="T-Bone Steak"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Prime T-Bone Steak
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 160.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Grilled Salmon"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Norwegian Grilled Salmon
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 115.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Chicken Cordon Bleu"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Chicken Cordon Bleu
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 55.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Fish and Chips"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Classic Fish and Chips
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 48.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Asian Delight (COLLAPSED) -->
+            <div class="mb-4">
+                <button
+                    class="menu-collapse-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseAsian"
+                    aria-expanded="false"
+                    aria-controls="collapseAsian"
+                >
+                    <span>Asian Delight</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse mt-3" id="collapseAsian">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Beef Teriyaki"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Beef Teriyaki Don
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 48.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Katsu Curry"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Chicken Katsu Curry
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 45.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Tom Yum"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Tom Yum Goong Seafood
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 52.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Pad Thai"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Special Pad Thai Noodle
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 42.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Beef Yakiniku"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Beef Yakiniku Ricebowl
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 48.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Crispy Dory"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Crispy Dory Rice
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 40.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Nusantara (COLLAPSED) -->
+            <div class="mb-4">
+                <button
+                    class="menu-collapse-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseNusantara"
+                    aria-expanded="false"
+                    aria-controls="collapseNusantara"
+                >
+                    <span>Nusantara</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse mt-3" id="collapseNusantara">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Sop Buntut"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Sop Buntut Kuah / Bakar
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 85.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Nasi Goreng"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Nasi Goreng Pilar Kayu
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 42.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Ayam Lengkuas"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Ayam Lengkuas Serundeng
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 38.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Soto Betawi"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Soto Betawi Daging Sapi
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 45.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Iga Bakar"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Iga Sapi Bakar Madu
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 78.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Bebek Crispy"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Bebek Crispy Sambal Korek
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 50.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Bites (COLLAPSED) -->
+            <div class="mb-4">
+                <button
+                    class="menu-collapse-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseBites"
+                    aria-expanded="false"
+                    aria-controls="collapseBites"
+                >
+                    <span>Bites</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse mt-3" id="collapseBites">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Truffle Fries"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Truffle Parmesan Fries
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 30.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Chicken Wings"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Spicy BBQ Wings
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 35.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Calamari"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Crispy Golden Calamari
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 38.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Nachos"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Beef Supreme Nachos
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 38.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Mozzarella Sticks"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Fried Mozzarella Sticks
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 32.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Tahu Cabe Garam"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Tahu Crispy Cabe Garam
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 22.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Burger & Pasta (COLLAPSED) -->
+            <div class="mb-4">
+                <button
+                    class="menu-collapse-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseBurgerPasta"
+                    aria-expanded="false"
+                    aria-controls="collapseBurgerPasta"
+                >
+                    <span>Burger & Pasta</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse mt-3" id="collapseBurgerPasta">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Aglio Olio"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Spaghetti Aglio Olio
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 45.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Carbonara"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Fettuccine Carbonara
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 48.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Bolognese"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Classic Beef Bolognese
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 46.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Cheeseburger"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Double Cheeseburger
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 52.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Chicken Burger"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Crispy Chicken Burger
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 44.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Penne Pesto"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Penne Basil Pesto
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 45.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ############################################################ -->
+            <!-- ==================== SECTION 3: DESSERT ==================== -->
+            <!-- ############################################################ -->
+            <div class="d-flex align-items-center gap-3 mb-4 mt-5">
+                <h2 class="h2 fw-bold mb-0 text-dark">Dessert</h2>
+                <div
+                    class="flex-grow-1 border-bottom border-2 opacity-25"
+                ></div>
+            </div>
+
+            <!-- Dessert Accordion (COLLAPSED) -->
+            <div class="mb-5">
+                <button
+                    class="menu-collapse-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseDessert"
+                    aria-expanded="false"
+                    aria-controls="collapseDessert"
+                >
+                    <span>Desserts</span>
+                    <i class="bi bi-chevron-up chevron-icon"></i>
+                </button>
+
+                <div class="collapse mt-3" id="collapseDessert">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Tiramisu"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Classic Italian Tiramisu
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 32.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Churros"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Churros con Chocolate
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 28.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card food-card h-100 p-2">
+                                <img
+                                    src="../images/portrait.jpg"
+                                    class="card-img-top food-card-img rounded-3"
+                                    alt="Burnt Cheesecake"
+                                />
+                                <div
+                                    class="card-body p-2 d-flex flex-column justify-content-between"
+                                >
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Basque Burnt Cheesecake
+                                        </h6>
+                                        <p
+                                            class="text-danger fw-semibold small mb-3"
+                                        >
+                                            Rp 35.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-orange btn-sm w-100">
+                                        <i class="bi bi-cart-plus me-1"></i> Add
+                                        to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="pt-5 pb-3">
+            <div class="container">
+                <div class="row gy-4 mb-4">
+                    <!-- Footer Col 1: Logos -->
+                    <div class="col-12 col-md-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <img
+                                src="../images/Logo-Makna.jpg"
+                                alt="Logo Makna"
+                                class="logo-circle bg-white p-1"
+                            />
+                            <img
+                                src="../images/Logo-Pilar_Kayu.jpg"
+                                alt="Logo Pilar"
+                                class="logo-circle bg-white p-1"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Footer Col 2: Complete Navigation -->
+                    <div class="col-12 col-md-4 footer-nav">
+                        <a href="../index.html">Home</a>
+                        <a href="menu.html" class="active">Menu</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+
+                    <!-- Footer Col 3: Find Us -->
+                    <div class="col-12 col-md-4">
+                        <h5 class="text-white fw-bold mb-3">Find Us</h5>
+                        <p
+                            class="mb-2 d-flex align-items-center gap-3 find-us-text"
+                        >
+                            <i class="bi bi-geo-alt find-us-icon"></i>
+                            <span>Jl. Hercules No. 5, Bandung</span>
+                        </p>
+                        <p
+                            class="mb-2 d-flex align-items-center gap-3 find-us-text"
+                        >
+                            <i class="bi bi-clock find-us-icon"></i>
+                            <span>Hours: 10.00 - 21.00</span>
+                        </p>
+                        <p
+                            class="mb-0 d-flex align-items-center gap-3 find-us-text"
+                        >
+                            <i class="bi bi-instagram find-us-icon"></i>
+                            <span>@maknakopi.bdg & @pilarkayuresto</span>
+                        </p>
                     </div>
                 </div>
 
-                <!-- Footer Col 2: Complete Navigation -->
-                <div class="col-12 col-md-4 footer-nav">
-                    <a href="../index.html">Home</a>
-                    <a href="menu.html" class="active">Menu</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
+                <hr class="border-secondary opacity-25 my-4" />
+
+                <div class="text-center small text-white-50">
+                    &copy; 2026 Makna Kopi x Pilar Kayu Resto. All rights
+                    reserved.
                 </div>
-
-                <!-- Footer Col 3: Find Us -->
-                <div class="col-12 col-md-4">
-                    <h5 class="text-white fw-bold mb-3">Find Us</h5>
-                    <p class="mb-2 d-flex align-items-center gap-3 find-us-text">
-                        <i class="bi bi-geo-alt find-us-icon"></i>
-                        <span>Jl. Hercules No. 5, Bandung</span>
-                    </p>
-                    <p class="mb-2 d-flex align-items-center gap-3 find-us-text">
-                        <i class="bi bi-clock find-us-icon"></i>
-                        <span>Hours: 10.00 - 21.00</span>
-                    </p>
-                    <p class="mb-0 d-flex align-items-center gap-3 find-us-text">
-                        <i class="bi bi-instagram find-us-icon"></i>
-                        <span>@maknakopi.bdg & @pilarkayuresto</span>
-                    </p>
-                </div>
-
             </div>
+        </footer>
 
-            <hr class="border-secondary opacity-25 my-4" />
-
-            <div class="text-center small text-white-50">
-                &copy; 2026 Makna Kopi x Pilar Kayu Resto. All rights reserved.
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap 5 JS Bundle & Custom JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../script.js"></script>
-    <script src="../cart.js"></script>
-</body>
-
+        <!-- Bootstrap 5 JS Bundle & Custom JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../script.js"></script>
+        <script src="../cart.js"></script>
+    </body>
 </html>
