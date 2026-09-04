@@ -8,14 +8,14 @@ class Navbar extends HTMLElement {
             <nav class="navbar navbar-expand-lg py-3">
                 <div class="container d-flex align-items-center justify-content-between">
                     <!-- Left: Logos -->
-                    <a class="navbar-brand d-flex align-items-center gap-2" href="${basePath}index.html">
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="${basePath}pages/home.html">
                         <img src="${basePath}images/brand logo/Logo-Makna.jpg" alt="Logo Makna" class="logo-circle" />
                         <img src="${basePath}images/brand logo/Logo-Pilar_Kayu.jpg" alt="Logo Pilar" class="logo-circle" />
                     </a>
 
                     <!-- Center: Navigation Links -->
                     <div class="d-none d-lg-flex align-items-center gap-2">
-                        <a class="nav-link ${activePage === 'index.html' || activePage === '' ? 'active' : ''}" href="${basePath}index.html">Home</a>
+                        <a class="nav-link ${activePage === 'home.html' || activePage === '' ? 'active' : ''}" href="${basePath}pages/home.html">Home</a>
                         <a class="nav-link ${activePage === 'menu.html' ? 'active' : ''}" href="${basePath}pages/menu.html">Menu</a>
                         <a class="nav-link ${activePage === 'gallery.html' ? 'active' : ''}" href="${basePath}pages/gallery.html">Gallery</a>
                         <a class="nav-link ${activePage === 'about.html' ? 'active' : ''}" href="${basePath}pages/about.html">About Us</a>

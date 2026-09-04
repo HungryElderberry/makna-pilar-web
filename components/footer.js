@@ -17,7 +17,7 @@ class Footer extends HTMLElement {
 
                     <!-- Footer Col 2: Navigation -->
                     <div class="col-12 col-md-4 footer-nav">
-                        <a href="${basePath}index.html" class="${activePage === 'index.html' || activePage === '' ? 'active' : ''}">Home</a>
+                        <a href="${basePath}pages/home.html" class="${activePage === 'home.html' || activePage === '' ? 'active' : ''}">Home</a>
                         <a href="${basePath}pages/menu.html" class="${activePage === 'menu.html' ? 'active' : ''}">Menu</a>
                         <a href="${basePath}pages/gallery.html" class="${activePage === 'gallery.html' ? 'active' : ''}">Gallery</a>
                         <a href="${basePath}pages/about.html" class="${activePage === 'about.html' ? 'active' : ''}">About Us</a>
