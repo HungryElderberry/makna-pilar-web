@@ -6,7 +6,7 @@ class Navbar extends HTMLElement {
         const activePage = window.location.pathname.split('/').pop() || 'index.html';
 
         this.innerHTML = `
-        <header class="sticky-top">
+        <header class="fixed-top shadow-sm" style="background-color: var(--bg-dark, #111); z-index: 1050;">
             <nav class="navbar navbar-expand-lg py-3">
                 <div class="container d-flex align-items-center justify-content-between">
                     <!-- Left: Logos -->
